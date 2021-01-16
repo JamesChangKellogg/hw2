@@ -4,46 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The_National_Consultants</title>
+    <!-- Add tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <!-- Introducing my business-->
-    <h1>About The National Consultants</h1>
-    Welcome to <strong>The National Consultants.</strong>
-    I provide custom, advisory services to <strong>Taylor Swift fans</strong> who want to learn more about <strong>The National</strong>, one of the iconic rock groups of the 21st century.
-
-    <!-- Background - including links to Wikipedia pages -->
-    <h2>Why we exist</h2>
-    In 2020, legendary pop musician Taylor Swift released two 'surprise' albums: 
-    <em> <a href="https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)">Folkore </a></em> and 
-    <em> <a href="https://en.wikipedia.org/wiki/Evermore_(Taylor_Swift_album)">Evermore </a></em>.
+    <h1 class="p-4 text-4xl text-center font-extrabold text-indigo-500 border-8 border-indigo-500 rounded-full bg-gray-300">Welcome to The National Consultants</h1>
+    <h2 class="mt-8 ml-4 text-xl font-bold text-indigo-500"> About The National Consultants.</h2>
     
-    <p> 
-    Both albums featured songs produced 'in secrecy' by 
-    <strong> <a href="https://en.wikipedia.org/wiki/Aaron_Dessner">Aaron Dessner</a></strong>, composer and multi-instrumentalist for <em>The National</em>. 
-    For many Swifties, the work of The National may have been previously unknown, and I want to help them explore their rich discography.
-    </p>
-    
-    <!-- Website navigation with links -->
-    <h3>My offerings</h3>
-    To help explorers get started, my website features:
-    <ul> 
-        <li> <a href="The_National.html">A primer about The National</a> </li>
-        <li> <a href="Recommendations.html">Recommendations about albums and merchandise </a> </li>
-    </ul>
+    <!-- Flexbox for About the national -->
+    <div class="md:flex border-8 border-indigo-500 bg-gray-300 items-center">
+         <!--Insert logo-->
+         <div class="md:w-3/8 md:p-16 py-8">
+            <img class="rounded-xl" src=logo.jpg>
+        </div>
+        <!-- Insert Value Prop text -->
+        <div class="md: w-5/8 md:p-16 py-8">
+            <!-- What we do-->
+            <p class="font-bold text-xl text-indigo-500">What we do</p> 
+                <p> 
+                    I provide custom, advisory services to Taylor Swift fans who want to learn more about The National, one of the iconic rock groups of the 21st century.
+                </p>
+        
+            <!-- Why we exist-->
+            <p class="font-bold text-xl text-indigo-500 mt-4">Why we exist</p>
+                <p>
+                    In 2020, legendary pop musician Taylor Swift released two 'surprise' albums: 
+                   <em> <a class="text-blue-500 underline" href="https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)">Folkore </a></em> and 
+                    <em> <a class="text-blue-500 underline" href="https://en.wikipedia.org/wiki/Evermore_(Taylor_Swift_album)">Evermore </a></em>.
+                </p>
 
-    I also offer personal coaching to explore the merits of specific National albums, songs, collaborations and their relevance to the Taylor Swift extended universe. These perspectives are worth paying significant dollars for because what is life without a deep devotion to The National.
-    <!-- Email inquiry -->
-    <p>Inquire with <a href="mailto:james.chang@kellogg.northwestern.edu?subject=Inquiry"> 
-        james.chang@kellogg.northwestern.edu</a> for hourly rates for individuals or groups.
-    </p>
+                <p class="mt-2"> 
+                    Both albums featured songs produced 'in secrecy' by 
+                    <a class="text-blue-500 underline" href="https://en.wikipedia.org/wiki/Aaron_Dessner">Aaron Dessner</a>, composer and multi-instrumentalist for <em>The National</em>. 
+                    For many Swifties, the work of The National may have been previously unknown, and I want to help them explore their rich discography.
+                </p>
 
-    <!-- About me -->
-    <h2>About me</h2>
-    My name is James Chang, and when I am not a full-time MBA student at the Kellogg School of Management, I am a full-time student of The National. I also stan Taylor Swift, whose bandwagon I joined after her <em>1989</em> album. 
-    <p>
-        The collision of these two interests absolutely <em><strong>blew my mind</strong></em> and was one of the few bright spots in the 2020 cultural conversation. 
-        The National Consultants provide the services you need to navigate that conversation with confidence and precision.
-    </p>
+            <!-- About this site-->
+            <p class="font-bold text-xl text-indigo-500 mt-4">About this site</p>
+                <p>
+                    To help explorers get started, my website features:
+                    <ul class="list-none md: list-disc"> 
+                        <li class="ml-4"> <a class="text-blue-500 underline" href="The_National.html">A primer about The National</a> </li>
+                        <li class="ml-4"> <a  class="text-blue-500 underline" href="Recommendations.html">Recommendations about albums and merchandise </a> </li>
+                    </ul>
+                </p>
+                <p>
+                    I also offer personal coaching to explore the merits of specific National albums, songs, collaborations and their relevance to the Taylor Swift extended universe. These perspectives are worth paying significant dollars for because what is life without a deep devotion to The National.
+                </p>
+
+        </div>
+    </div>
     
+    <!-- Prompt for Form -->
+    <h2 class="mt-8 ml-4 text-xl font-bold text-indigo-500"> Sign up for a free consultation today!</h2>
+
+    <!-- FORM ENTRY -->
+    <form netlify>
+        <!-- Flex Name and Email -->
+        <div class="md:flex m-4"> 
+            <!-- Your Name -->
+            <div class="w-1/3">
+                <label class="block mt-4 font-bold" for="name">Your name</label>
+                <input class="p-2 w-1/8 border border-gray-400 rounded shadow-l focus:outline-none focus:ring-indigo-500
+                focus:border-blue-500" type="text" id="name" name="name">
+            </div>
+                   
+            <!-- Your Email -->
+            <div class="w-1/3">
+                <label class="block mt-4 font-bold" for="email">Your email</label>
+                <input class="p-2 w-1/8 border border-gray-400 rounded shadow-l focus:outline-none focus:ring-indigo-500
+                focus:border-blue-500" type="text" id="email" name="email">
+            </div>
+        </div>
+
+        <!-- What did you enjoy about Folklore -->
+        <div class="m-4">
+            <label class="block mt-4 font-bold" for="Folkore-input">What did you enjoy about <em>Folkore?</em></label>
+            <input class="p-8 w-2/3 border border-gray-400 rounded shadow-l focus:outline-none focus:ring-indigo-500
+            focus:border-blue-500" type="text" id="Folkore-input" name="Folkore-input">
+        </div>
+        <!-- Submit button -->
+        <button class="block m-4 text-white bg-blue-500 rounded px-4 py-2" href="submission.html">Submit</button>
+    </form>
+
+  <!-- About me -->
+    <h2 class="mt-8 ml-4 text-xl font-bold text-indigo-500">About me</h2>
+        <div class="m-4">My name is James Chang, and when I am not a full-time MBA student at the Kellogg School of Management, I am a full-time student of The National. I also stan Taylor Swift, whose bandwagon I joined after her <em>1989</em> album.</div> 
+        <div class="m-4">When not thinking about The National or schoolwork, James is an avid NY Yankees and Brooklyn Nets fan, enjoys brewing his own kombucha, and is very excited for more Mandalorian shows on Disney Plus.</div> 
+        </p>
 </body>
 </html>

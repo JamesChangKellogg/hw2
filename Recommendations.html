@@ -3,45 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommendations</title>
+    <title>Album Recommendations</title>
+        <!-- Add tailwind -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    <!-- Link back to other pages -->
-    <h1>Sample services</h1>
-    If you partner with <a href="index.html">my firm, The National Consulting</a>, the Taylor Swift fans in your life can benefit from customized recommendations and advice for any question you could possibly think of related to <a href="The_National.html">this legendary band.</a> 
-    <p> Below are sample advisory services I  provide, and further details are available upon inquiry at
-        <a href="mailto:james.chang@kellogg.northwestern.edu?subject=Inquiry"> 
-        james.chang@kellogg.northwestern.edu</a> 
-    .</p>
 
-    <!-- Album Recs with hyperlinks -->
-    <h2>Album Recommendations (in rank order)</h2>
-    Taylor Swift fans may feel overwhelmed when exploring The National's titanic discovery. Let me be your Sherpa through their musical journey. 
-    <p>
-        If you enjoyed <em>Folklore</em>, I believe you will like the below albums. But I am available for custom album recs, song recs, and even curated playlists for my clients.
-    </p>
-    <Ol>
-        <li> <em>Boxer</em> </li>
-            <a href=https://www.amazon.com/Boxer-National/dp/B000O5AYCA> <img src="boxer.jpg"> </a>
-            <div>This album includes thoughtful, midtempo ruminations on lost love that will be familiar to Swift fans.</div>
-
-    
-        <p> <li> <em>Sleep Well Beast</em> </li>
-            <a href=https://www.amazon.com/Sleep-Well-Beast-National/dp/B0716RP8ZH> <img src="swb.jpg"> </a>
-            <div> The album cover features the barn / recording studio where Aaron Dessner produced <em> Folklore </em> and <em> Evermore </em> </div>
+<body class="bg-gray-200">
+    <!-- Sample Services -->
+    <div class="space-y-4 m-2">
+        <h1 class="text-4xl font-extrabold text-center border-8 border-indigo-500 rounded p-4">Recommendation services</h1>
+        <p>
+           By partnering with <a class="text-blue-500 underline" href="index.html">my firm, The National Consulting</a>, the Taylor Swift fans in your life can benefit from customized recommendations and advice for any question you could possibly think of related to <a href="The_National.html">this legendary band.</a> 
         </p>
-    </Ol>
+        <p>
+            The National's titanic discography can be overwhelming. Let me be your Sherpa through your musical journey. 
+        </p>
+        <p>
+            Further details are available upon inquiry at
+            <a class="text-blue-500 underline href="mailto:james.chang@kellogg.northwestern.edu?subject=Inquiry"> 
+            james.chang@kellogg.northwestern.edu</a> 
+        </p>
+    </div>
 
-    <!-- Merch rec -->
-    <h2>Merchandise Recommendation</h2>
-    Taylor Swift fans will want to rep National merch after they discover how much they love this band and will need guidance. I provide one sample of my guidance.
-    <p>    
-        This beanie ($20) is useful for pensive strolls through the woods during the fall & winter, which is the ideal environment to listen to <em> Folklore </em> and <em> Evermore </em>.
-        <div>
-        <a href=https://shop.americanmary.com/accessories/tn030066-the-national-flower-beanie-grey><img width="431px" height="369px" src="beanie.png"></a>
+    <!-- Album Recommendations Section Heading -->
+    <div class="space-y-4 m-2">
+        <h2 class="text-xl font-bold underline mt-4">Sample: Album Recommendations</h2>
+        <p>
+        If you enjoyed <em>Folklore</em>, I believe you will like the below albums. But I am available for custom album recs, song recs, and even curated playlists for my clients.
+        </p>
+    </div>
+
+     <!-- Flex Album Names  -->
+    <div class="md:flex bg-indigo-200 rounded m-2">
+            <!-- Album 1 -->
+            <div class="md:w-1/3 m-4">
+              <div class="space-y-2 md:mt-0">
+                <h2 class="p-2 font-bold">Boxer</h2>
+                <div>
+                    <a href=https://www.amazon.com/Boxer-National/dp/B000O5AYCA> <img src="boxer.jpg"> </a>
+                </div>
+                <div>
+                    This album includes thoughtful, midtempo ruminations on lost love that will be familiar to Swift fans.
+                </div>
+                <div class="italic">
+                    <a class="text-blue-500 underline" href=https://pitchfork.com/reviews/albums/10242-boxer>Pitchork rating: 8.6</a> 
+                </div>
+              </div>
+            </div>
+  
+            <!-- Album 2 -->
+            <div class="md:w-1/3 m-4">
+              <div class="space-y-2 md:mt-0">
+                <h2 class="p-2 font-bold">Sleep Well Beast</h2>
+                <div>
+                    <a href=https://www.amazon.com/Sleep-Well-Beast-National/dp/B0716RP8ZH> <img src="swb.jpg"> </a>
+                </div>
+                <div>
+                    The album cover features the barn / recording studio where Aaron Dessner produced <em> Folklore </em> and <em> Evermore </em>
+                </div>
+                <div class="italic">
+                    <a class="text-blue-500 underline" href=https://pitchfork.com/reviews/albums/the-national-sleep-well-beast>Pitchork rating: 8.0</a> 
+                </div>
+               </div>
+            </div>
+
+            <!-- Album 3 -->
+            <div class="md:w-1/3 m-4">
+              <div class="space-y-2 md:mt-0">
+                <h2 class="p-2 font-bold">I Am Easy To Find</h2>
+                <div>
+                    <a href=https://www.amazon.com/I-Am-Easy-Find-National/dp/B07PGKWHJ4> <img src="iatf.png"> </a>
+                </div>
+                <div>
+                    The album features female narratives and bleepy bloopy electronic noices, both hallmarks of recent T-Swift.
+                </div>
+                <div class="italic">
+                    <a class="text-blue-500 underline" href=https://pitchfork.com/reviews/albums/the-national-i-am-easy-to-find>Pitchork rating: 7.5</a> 
+                </div>
+            </div>          
         </div>
-    </p>
-    
-
+    </div>
 </body>
 </html>
